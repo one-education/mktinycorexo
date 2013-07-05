@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
+
+cp /media/mi /usr/share/X11/xkb/symbols
+sed -i -e '/us/mi/' /etc/sysconfig/keyboard
