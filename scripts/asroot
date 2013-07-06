@@ -8,3 +8,8 @@ cp /media/mi /usr/share/X11/xkb/symbols
 sed -i -e 's/us/mi/' /etc/sysconfig/keyboard
 # hack olpc configure to select maori instead of what is in the manufacturing data
 sed -i -e 's/XKBLAYOUT="$XKBLAYOUT"/XKBLAYOUT="mi"/' /usr/sbin/olpc-configure
+
+# copy maori lanugage
+mkdir -p /usr/share/locale/mi/LC_MESSAGES/
+cp /media/mo/* /usr/share/locale/mi/LC_MESSAGES/
+
