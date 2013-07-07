@@ -6,6 +6,6 @@ cp /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 cp /media/mi /usr/share/X11/xkb/symbols
 # select the maori keyboard
 sed -i -e 's/us/mi/' /etc/sysconfig/keyboard
-# hack olpc configure to select maori instead of what is in the manufacturing data
-sed -i -e 's/XKBLAYOUT="$XKBLAYOUT"/XKBLAYOUT="mi"/' /usr/sbin/olpc-configure
-
+# update olpc configure to select maori instead of what is in the manufacturing data
+mkdir -p /etc/olpc-configure
+echo mi >/etc/olpc-configure/default-kbd-layout
