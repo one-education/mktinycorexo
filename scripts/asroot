@@ -10,5 +10,3 @@ sed -i -e 's/us/mi/' /etc/sysconfig/keyboard
 mkdir -p /etc/olpc-configure
 echo mi >/etc/olpc-configure/default-kbd-layout
 
-# update Maori translations
-sh /media/mi_lang_pack_v2.sh
