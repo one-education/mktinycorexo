@@ -1041,6 +1041,10 @@ p_begin "Adding Open Firmware boot script ... "
 cat << EOF > output/boot/olpc.fth
 \ olpc.fth
 visible
+
+\ just install the image, not pretty or polite
+fs-update u:\33029xx4.zd
+
 .( -- Tiny Core Linux boot script for Open Firmware    ) cr
 .(    by quozl@laptop.org, ${VERSION}               -- ) cr cr
 
