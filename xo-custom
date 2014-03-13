@@ -42,11 +42,9 @@ get_dev() {
 }
 
 find_chroot() {
-    run=`ls /mnt/xo/versions/run/`
-    for buildnr in $run 
-    do
-        root_path=/mnt/xo/versions/run/$buildnr
-    done
+    # for some reason 13.3.0 for XO-4, customized (build 29) does not use a
+    # versioned filesystem. For now just hard-code it
+    root_path=/mnt/xo
 }
 
 set_time() {
