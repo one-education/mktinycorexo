@@ -2,4 +2,4 @@ language: c
 compiler:
   - gcc
 # Change to trigger
-script: ./mktinycorexo && git config -l && ls -la
+script: git config -l ; ./mktinycorexo ; ls -la
