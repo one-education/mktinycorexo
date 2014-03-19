@@ -6,6 +6,6 @@ env:
   global:
     - GIT_NAME="One Education CI"
     - GIT_EMAIL="one-education-ci@hippiehacker.org"
-    secure: "BkD75kTeT/H3aLzqUP6o6GJZZDGSaAac9fKx4we8bsLAl1g2fDiqaYjJHOFpHMcZ7rFvlJAkcow6qsw5wjNePJMW9gR9mxm3tdfPl7hzCKKYWEJkyzS5qHjV5elW9ct4HGc3ZvOf0fhhLR1p0NO8JTMi+XbNdPXlwS0VBxgRQ+M="
+    - secure: "BkD75kTeT/H3aLzqUP6o6GJZZDGSaAac9fKx4we8bsLAl1g2fDiqaYjJHOFpHMcZ7rFvlJAkcow6qsw5wjNePJMW9gR9mxm3tdfPl7hzCKKYWEJkyzS5qHjV5elW9ct4HGc3ZvOf0fhhLR1p0NO8JTMi+XbNdPXlwS0VBxgRQ+M="
 
 script: git notes append -m "Build https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_JOB_ID" ; git push origin refs/notes/*
