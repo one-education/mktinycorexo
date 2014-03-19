@@ -1,6 +1,5 @@
 language: c
 compiler:
   - gcc
-  - clang
 # Change to trigger
-script: ./mktinycorexo /dev/sdX1
+script: ./mktinycorexo && git config -l && ls -la
